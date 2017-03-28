@@ -1,0 +1,151 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Verify test",
+        "description": "",
+        "id": "my-feature;verify-test",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 5,
+            "name": "I am on the bookings website",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "i open the link",
+            "match": {
+              "location": "Test1.i_open_the_link()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "I can see the homepage",
+            "match": {
+              "location": "Test1.i_can_see_the_homepage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "My feature",
+    "description": "",
+    "id": "my-feature",
+    "keyword": "Feature",
+    "uri": "a.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 16,
+        "name": "As a user I must be able to book a room using the hotel booking system",
+        "description": "",
+        "id": ";as-a-user-i-must-be-able-to-book-a-room-using-the-hotel-booking-system;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 15838137825,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the user is on the hotel booking website",
+            "match": {
+              "location": "Navigation.open_booking_website()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 17,
+        "name": "As a user I must be able to book a room using the hotel booking system",
+        "description": "",
+        "id": ";as-a-user-i-must-be-able-to-book-a-room-using-the-hotel-booking-system;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 10324903333,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the user is on the hotel booking website",
+            "match": {
+              "location": "Navigation.open_booking_website()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 18,
+        "name": "As a user I must be able to book a room using the hotel booking system",
+        "description": "",
+        "id": ";as-a-user-i-must-be-able-to-book-a-room-using-the-hotel-booking-system;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 10313358643,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the user is on the hotel booking website",
+            "match": {
+              "location": "Navigation.open_booking_website()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 19,
+        "name": "As a user I must be able to book a room using the hotel booking system",
+        "description": "",
+        "id": ";as-a-user-i-must-be-able-to-book-a-room-using-the-hotel-booking-system;;5",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 10481918936,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the user is on the hotel booking website",
+            "match": {
+              "location": "Navigation.open_booking_website()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      }
+    ],
+    "name": "",
+    "description": "",
+    "id": "",
+    "keyword": "Feature",
+    "uri": "createBooking.feature"
+  }
+]
