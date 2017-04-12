@@ -1,42 +1,16 @@
 Feature: As a user I can delete a booking at a hotel website
 
   @Sanity @Delete
-  Scenario Outline: As a user I must be able to delete my room booking [90m# deleteBooking.feature:4[0m
-    [36mGiven [0m[36mthe user is on the hotel booking website[0m
-    [36mWhen [0m[36mthe user enters their firstname "Sue"[0m
-    [36mAnd [0m[36mthe user enters their lastname "Williams"[0m
-    [36mAnd [0m[36mthe user enters "100"[0m
-    [36mAnd [0m[36mthe value of the deposit is "false"[0m
-    [36mAnd [0m[36mthe checkin date is selected "<checkin>"[0m
-    [36mAnd [0m[36mthe checkout date is selected "<checkout>"[0m
-    [36mAnd [0m[36mthe user selects Save to book their room[0m
-    [36mThen [0m[36mthe user selects Delete[0m
-    [36mAnd [0m[36mthe user can no longer see the booking "Sue"[0m
+  Scenario Outline: As a user I must be able to delete my room booking # deleteBooking.feature:4
+    Given the user is on the hotel booking website
+    When the user enters their firstname "Sue"
+    And the user enters their lastname "Williams"
+    And the user enters "100"
+    And the value of the deposit is "false"
+    And the checkin date is selected "<checkin>"
+    And the checkout date is selected "<checkout>"
+    And the user selects Save to book their room
+    Then the user selects Delete
+    And the user can no longer see the booking "Sue"
 
     Examples: 
-
-  @Delete @Sanity
-  Scenario Outline: As a user I must be able to delete my room booking [90m# deleteBooking.feature:18[0m
-    [32mGiven [0m[32mthe user is on the hotel booking website[0m                     [90m# Navigation.open_booking_website()[0m
-    [32mWhen [0m[32mthe user enters their firstname "[0m[32m[1mSue[0m[32m"[0m                         [90m# Navigation.the_user_enters_firstname(String)[0m
-    [32mAnd [0m[32mthe user enters their lastname "[0m[32m[1mWilliams[0m[32m"[0m                      [90m# Navigation.the_user_enters_lastname(String)[0m
-    [32mAnd [0m[32mthe user enters "[0m[32m[1m100[0m[32m"[0m                                          [90m# Navigation.the_user_enters(String)[0m
-    [32mAnd [0m[32mthe value of the deposit is "[0m[32m[1mfalse[0m[32m"[0m                            [90m# Navigation.the_user_selects(String)[0m
-    [32mAnd [0m[32mthe checkin date is selected "[0m[32m[1m30[0m[32m"[0m                              [90m# Navigation.the_user_selects_checkindate(String)[0m
-    [32mAnd [0m[32mthe checkout date is selected "[0m[32m[1m31[0m[32m"[0m                             [90m# Navigation.the_user_selects_checkoutdate(String)[0m
-    [32mAnd [0m[32mthe user selects Save to book their room[0m                       [90m# Navigation.the_user_selects_save()[0m
-    [32mThen [0m[32mthe user selects Delete[0m                                       [90m# Navigation.the_user_selects_delete()[0m
-    [32mAnd [0m[32mthe user can no longer see the booking "[0m[32m[1mSue[0m[32m"[0m                   [90m# Navigation.user_cannot_view_details(String)[0m
-
-  @Delete @Sanity
-  Scenario Outline: As a user I must be able to delete my room booking [90m# deleteBooking.feature:19[0m
-    [32mGiven [0m[32mthe user is on the hotel booking website[0m                     [90m# Navigation.open_booking_website()[0m
-    [32mWhen [0m[32mthe user enters their firstname "[0m[32m[1mSue[0m[32m"[0m                         [90m# Navigation.the_user_enters_firstname(String)[0m
-    [32mAnd [0m[32mthe user enters their lastname "[0m[32m[1mWilliams[0m[32m"[0m                      [90m# Navigation.the_user_enters_lastname(String)[0m
-    [32mAnd [0m[32mthe user enters "[0m[32m[1m100[0m[32m"[0m                                          [90m# Navigation.the_user_enters(String)[0m
-    [32mAnd [0m[32mthe value of the deposit is "[0m[32m[1mfalse[0m[32m"[0m                            [90m# Navigation.the_user_selects(String)[0m
-    [32mAnd [0m[32mthe checkin date is selected "[0m[32m[1m24[0m[32m"[0m                              [90m# Navigation.the_user_selects_checkindate(String)[0m
-    [32mAnd [0m[32mthe checkout date is selected "[0m[32m[1m26[0m[32m"[0m                             [90m# Navigation.the_user_selects_checkoutdate(String)[0m
-    [32mAnd [0m[32mthe user selects Save to book their room[0m                       [90m# Navigation.the_user_selects_save()[0m
-    [32mThen [0m[32mthe user selects Delete[0m                                       [90m# Navigation.the_user_selects_delete()[0m
-    [32mAnd [0m[32mthe user can no longer see the booking "[0m[32m[1mSue[0m[32m"[0m                   [90m# Navigation.user_cannot_view_details(String)[0m
